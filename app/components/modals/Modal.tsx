@@ -165,6 +165,7 @@ const Modal: React.FC<ModalProps> = ({
                         relative
                         p-4
                         flex-auto
+                        overflow-y-auto
                         " >
                             {body}
                         </div>
