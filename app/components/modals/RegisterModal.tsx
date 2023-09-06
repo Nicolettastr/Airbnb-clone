@@ -46,6 +46,7 @@ const onSubmit: SubmitHandler<FieldValues> = (data) => {
         .then(() => {
             toast.success('Registered!');
             registerModal.onClose();
+            loginModal.onOpen();
         })
         .catch((error) => {
             toast.error('Something went wrong.')

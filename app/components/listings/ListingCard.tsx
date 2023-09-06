@@ -13,7 +13,7 @@ import Button from "../Button";
 interface ListingCardProps {
     data: Listing;
     reservation?: Reservation;
-    onAction?: (id:string) => void;
+    onAction?: (id: string) => void;
     disabled?: boolean;
     actionLabel?: string;
     actionId?: string;
@@ -29,6 +29,8 @@ const ListingCard: React.FC<ListingCardProps> = ({
     actionId = '',
     currentUser
 }) => {
+
+    console.log(data)
 
     const router = useRouter();
     const { getByValue } = useCountries();
@@ -63,6 +65,8 @@ const ListingCard: React.FC<ListingCardProps> = ({
 
         return `${format(start, 'PP')} - ${format(end, 'PP')}`
     }, [])
+
+    console.log('data', data)
 
   return (
     <div 
