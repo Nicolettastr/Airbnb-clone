@@ -4,14 +4,13 @@ import { toast } from "react-hot-toast"
 import axios from "axios"
 import { useCallback, useState } from "react"
 import { useRouter } from "next/navigation"
-import { SafeUser } from "../types"
+import { SafeReservation, SafeUser } from "../types"
 import Heading from "../components/Heading"
 import Container from "../components/Container"
 import ListingCard from "../components/listings/ListingCard"
-import { Reservation } from "@prisma/client"
 
 interface ReservationsClientProps {
-    reservations: Reservation[];
+    reservations: SafeReservation[];
     currentUser: SafeUser | null
 }
 
@@ -32,7 +31,7 @@ const ReservationsClient: React.FC<ReservationsClientProps> = ({
                 toast.success('Reservation cancelled');
                 router.refresh();
             })
-            .catch((error) => {
+            .catch(() => {
                 toast.error('Something went wrong.')
             })
             .finally(() => {

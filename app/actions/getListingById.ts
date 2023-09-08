@@ -23,7 +23,18 @@ export default async function getListingById(
             return null;
         }
 
-        return listing
+        return {
+            ...listing,
+            createAt: listing.createAt.toString(),
+            user: {
+              ...listing.user,
+              createAt: listing.user.createAt.toString(),
+              updateAt: listing.user.updateAt.toString(),
+              emailVerified: 
+                listing.user.emailVerified?.toString() || null,
+            }
+          };
+
     }catch (error: any) {
         throw new Error(error)
     }
