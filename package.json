@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && prisma generate",
     "start": "next start",
     "lint": "next lint"
   },
@@ -45,6 +45,7 @@
     "@types/date-fns": "^2.6.0",
     "@types/leaflet": "^1.9.3",
     "@types/react-date-range": "^1.4.4",
-    "eslint": "^8.48.0"
+    "eslint": "^8.48.0",
+    "eslint-plugin-next": "^0.0.0"
   }
 }
