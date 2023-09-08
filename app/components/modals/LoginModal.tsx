@@ -101,13 +101,13 @@ const onSubmit: SubmitHandler<FieldValues> = (data) => {
             outLine
             label='Continue with Google'
             icon={FcGoogle}
-            onClick={() => {}}
+            onClick={() => signIn('google')}
             />
             <Button
             outLine
             label='Continue with Github'
             icon={AiFillGithub}
-            onClick={() => {}}
+            onClick={() => signIn('github')}
             />
             <div className='
                 text-neutral-500
