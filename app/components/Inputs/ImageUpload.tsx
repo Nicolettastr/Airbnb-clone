@@ -1,15 +1,18 @@
 'use client'
 
+import React from 'react'
 import { CldUploadWidget } from "next-cloudinary"
 import Image from "next/image"
 import { useCallback } from "react"
 import { TbPhotoPlus } from "react-icons/tb"
 
 declare global {
+  // eslint-disable-next-line no-unused-vars
   var cloudinary: any;
 }
 
 interface ImageUploadProps {
+  // eslint-disable-next-line no-unused-vars
   onChange: (value: string) => void;
   value: string;
 }

@@ -1,5 +1,6 @@
 'use client'
 
+import React from "react";
 import { RangeKeyDict, Range, DateRange } from "react-date-range";
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
@@ -7,6 +8,7 @@ import 'react-date-range/dist/theme/default.css';
 
 interface CalendarProps {
     value: Range;
+    // eslint-disable-next-line no-unused-vars
     onChange: (value: RangeKeyDict) => void;
     disabledDates?: Date[]
 }

@@ -1,6 +1,6 @@
 'use client'
 
-import { Reservation } from "@prisma/client";
+import React from 'react'
 import { SafeReservation, SafeUser } from "../types";
 import Container from "../components/Container";
 import Heading from "../components/Heading";

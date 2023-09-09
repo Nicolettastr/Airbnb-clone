@@ -1,6 +1,7 @@
 'use client'
 
-import { Listing } from "@prisma/client";
+
+import React from 'react'
 import { SafeListing, SafeUser } from "../types";
 import Container from "../components/Container";
 import Heading from "../components/Heading";

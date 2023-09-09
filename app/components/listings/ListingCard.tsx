@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import useCountries from "@/app/hooks/useCountries";
 import { SafeUser } from "@/app/types";
 import { Listing, Reservation } from "@prisma/client"
@@ -13,6 +14,7 @@ import Button from "../Button";
 interface ListingCardProps {
     data: Listing;
     reservation?: Reservation;
+    // eslint-disable-next-line no-unused-vars
     onAction?: (id: string) => void;
     disabled?: boolean;
     actionLabel?: string;

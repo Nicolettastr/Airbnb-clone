@@ -1,11 +1,13 @@
 'use client'
 
+import React from 'react'
 import { IconType } from "react-icons"
 
 interface CategoryInputsProps {
     icon: IconType;
     label: string;
     selected: boolean;
+    // eslint-disable-next-line no-unused-vars
     onClick: (value: string) => void;
 }
 

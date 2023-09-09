@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import { useCallback } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
@@ -7,6 +8,7 @@ interface CounterProps {
     title: string;
     subtitle: string;
     value: number;
+    // eslint-disable-next-line no-unused-vars
     onChange: (value: number) => void;
 }
 

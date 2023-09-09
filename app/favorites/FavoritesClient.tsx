@@ -1,3 +1,5 @@
+
+import React from 'react'
 import { SafeUser, SafeListing } from "../types";
 import Heading from "../components/Heading";
 import Container from "../components/Container";

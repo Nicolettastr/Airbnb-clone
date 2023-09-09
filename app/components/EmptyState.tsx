@@ -1,5 +1,7 @@
 'use client'
 
+
+import React from 'react'
 import { useRouter } from "next/navigation";
 import Heading from "./Heading";
 import Button from "./Button";

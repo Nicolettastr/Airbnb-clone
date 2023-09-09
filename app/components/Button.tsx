@@ -1,9 +1,11 @@
 'use client'
 
+import React from 'react'
 import { IconType } from "react-icons";
 
 interface ButtonProps {
     label: string;
+    // eslint-disable-next-line no-unused-vars
     onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
     disabled?: boolean;
     outLine?: boolean;
