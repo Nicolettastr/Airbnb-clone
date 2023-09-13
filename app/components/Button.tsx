@@ -3,6 +3,8 @@
 import React from 'react'
 import { IconType } from "react-icons";
 
+/* interface */
+
 interface ButtonProps {
     label: string;
     // eslint-disable-next-line no-unused-vars
