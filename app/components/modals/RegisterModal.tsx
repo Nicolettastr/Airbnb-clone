@@ -97,12 +97,12 @@ const toggle = useCallback(() => {
     const footerContent = (
         <div className='flex flex-col gap-2 mt-3'>
             <hr />
-            <Button
+            {/* <Button
             outLine
             label='Continue with Google'
             icon={FcGoogle}
             onClick={() => signIn('google')}
-            />
+            /> */}
             <Button
             outLine
             label='Continue with Github'
