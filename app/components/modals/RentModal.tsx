@@ -15,6 +15,8 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 
+
+/* steps to decide which content comes */
 enum STEPS {
     CATEGORY = 0,
     LOCATION = 1,
@@ -23,6 +25,7 @@ enum STEPS {
     DESCRIPTION = 4,
     PRICE = 5
 }
+
 
 const RentModal = () => {
 
