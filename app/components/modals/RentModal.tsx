@@ -11,7 +11,6 @@ import dynamic from "next/dynamic";
 import Counter from "../Inputs/Counter";
 import ImageUpload from "../Inputs/ImageUpload";
 import Input from "../Inputs/Input";
-import { error } from "console";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";

@@ -38,7 +38,7 @@ const Home = async ({searchParams}: HomeProps ) => {
         ">
           {listings.map((listing: any) => {
             return (
-              <div>
+              <div key={listing.id}>
                 <ListingCard
                   key={listing.id}
                   data={listing}
